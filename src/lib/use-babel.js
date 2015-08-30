@@ -1,4 +1,5 @@
-// This file is raw ES5 (not arrow function
+// This file is babel (use arrow function
 module.exports = function(x){
+  // babebabe
   return (x => 10)
 }

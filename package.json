@@ -7,16 +7,6 @@
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "babelify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "only": "src/"
-        }
-      ]
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",

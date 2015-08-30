@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var path = require("path")
 var browserify = require('browserify');
-var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var glob = require("glob")
 var del = require("del")
@@ -26,6 +25,9 @@ gulp.task('browserify', function() {
     entries: files,
     extensions: ['js', 'jsx'],
   })
+  .transform(babelify.configure({
+    only: /src\/.*/
+  }))
   .plugin(factor, {
     output: outputs
   })
