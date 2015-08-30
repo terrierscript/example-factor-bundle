@@ -22,7 +22,7 @@ gulp.task('browserify', function() {
     return file.replace("./src/entry", outputDir)
   })
   mkdirp.sync(outputDir)
-  var b = browserify({
+  browserify({
     entries: files,
     extensions: ['js', 'jsx'],
   })
