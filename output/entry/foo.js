@@ -18,10 +18,18 @@ var _vendorNonBabel2 = _interopRequireDefault(_vendorNonBabel);
 (0, _libBaz2["default"])();
 
 },{"../../vendor/non-babel":5,"../lib/baz":3,"../lib/use-babel":4}],5:[function(require,module,exports){
+var foo = require("./src/foo")
+
 // This file is raw ES5 (not arrow function
 module.exports = function(x){
   // non babebabe
   return (x => 10)
+}
+},{"./src/foo":6}],6:[function(require,module,exports){
+// This file is raw ES5 (not arrow function
+module.exports = function(x){
+  // non babebabe
+  return `inter ${x} polation`
 }
 },{}],4:[function(require,module,exports){
 // This file is babel (use arrow function
